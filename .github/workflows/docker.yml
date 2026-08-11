@@ -10,7 +10,7 @@ jobs:
   docker:
     if: github.event.pull_request.merged == true
     name: Docker de
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
 
     steps:
       # Checkout code
