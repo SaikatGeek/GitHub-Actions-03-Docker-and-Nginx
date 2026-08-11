@@ -38,6 +38,6 @@ jobs:
         env:
           IMAGE: ${{ secrets.DOCKER_USERNAME }}/mynginx
         run: |
-          docker tag test-nginx $IMAGE:latest
+          docker tag myimage:test $IMAGE:latest
           docker push $IMAGE:latest
 
