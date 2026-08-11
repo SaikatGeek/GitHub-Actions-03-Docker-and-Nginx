@@ -28,7 +28,7 @@ jobs:
 
       - name: Test Docker Image
         run: |
-          docker run -d --rm -p 8080:80 --name test-nginx myimage:test 
+          docker run -d -p 8080:80 --name test-nginx myimage:test 
           sleep 5
           curl http://localhost:8080 | grep "Hello from GitHub Actions!"
           docker stop test-nginx
